@@ -1,12 +1,10 @@
 import Engine from "./core/Engine.js";
 import GameObject from "./core/GameObject.js";
 import Hitbox from "./core/Hitbox.js";
-import Level from "./core/Level.js";
 import Sprite from "./core/Sprite.js";
 
 //Create the engine
 const engine = new Engine(1024, 576);
-const level = new Level();
 
 const hitbox = [
   new Hitbox({
