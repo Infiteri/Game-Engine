@@ -1,10 +1,12 @@
 import Engine from "./core/Engine.js";
 import GameObject from "./core/GameObject.js";
 import Hitbox from "./core/Hitbox.js";
+import Level from "./core/Level.js";
 import Sprite from "./core/Sprite.js";
 
 //Create the engine
 const engine = new Engine(1024, 576);
+const level = new Level();
 
 const hitbox = [
   new Hitbox({
@@ -43,11 +45,11 @@ const player = new GameObject({
     },
     Jump: {
       src: "assets/samuraiMack/Jump.png",
-      frames: 2,
+      frames: 8,
     },
     Fall: {
       src: "assets/samuraiMack/Fall.png",
-      frames: 2,
+      frames: 8,
     },
   },
 });
