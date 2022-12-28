@@ -1,0 +1,39 @@
+* {
+  font-family: sans-serif;
+}
+
+.topBar {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.topBar .loadSprite {
+  margin-left: 100px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#fileInput {
+  display: none;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+.options {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  user-select: none;
+  cursor: auto;
+}
+
+.export {
+  position: absolute;
+  left: 75%;
+  top: 75%;
+  user-select: none;
+  cursor: pointer;
+}

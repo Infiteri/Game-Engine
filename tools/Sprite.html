@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprite HTML Tool</title>
+    <link rel="stylesheet" href="Sprite.css" />
+    <script src="SpriteTool.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="topBar">
+      <h1>Sprite Tools</h1>
+      <h2 class="loadSprite">Load Sprite</h2>
+
+      <input type="file" id="fileInput" />
+    </div>
+
+    <div class="options">
+      <h1>Options:</h1>
+
+      <h3>
+        Scale: <input type="number" id="scale" min="1" max="25" value="1" />
+      </h3>
+
+      <h3>
+        Amount Of Frames:
+        <input type="number" id="frames" min="1" max="100" value="1" />
+      </h3>
+
+      <h3>
+        Frames Hold:
+        <input type="number" id="framesHold" min="1" max="100" value="1" />
+      </h3>
+
+      <h3>
+        Offset:
+        <input type="number" id="offsetX" max="100000" value="1" />
+        <input type="number" id="offsetY" max="100000" value="1" />
+      </h3>
+
+      <h3>
+        Hitbox:
+        <input type="number" id="hitboxW" max="100000" value="100" />
+        <input type="number" id="hitboxH" max="100000" value="100" />
+      </h3>
+    </div>
+
+    <h1 class="export">EXPORT CODE</h1>
+
+    <canvas width="600" height="550"></canvas>
+  </body>
+</html>
